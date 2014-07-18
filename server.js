@@ -7,6 +7,7 @@ var server = http.createServer(function (request, response) {
   response.write("**** BEGIN ***\n");
   response.write("NODE_ENV : " + process.env.NODE_ENV + "\n");
   response.write("PORT : " + process.env.PORT + "\n");
+  response.write("mongoUri : " + process.env.mongoUri + "\n");
   response.end("***** END *****\n");
 });
 
